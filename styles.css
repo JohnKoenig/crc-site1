@@ -1,9 +1,12 @@
 body {
-  background-color: #92A8D1;
+  background-color: #fefbd8;
 }
 h1 {
-  color: darkgray;
+  color: #618685;
+}
+h2 {
+  color: #d5f4e6;
 }
 p {
-  color: blue;
+  color: #80ced6;
 }
