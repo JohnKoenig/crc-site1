@@ -1,7 +1,12 @@
-body {
-  background-color: #fefbd8;
-  margin-left: 50px;
-  margin-right: 50px;
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+@media not screen and (max-width: 600px) {
+  body {
+    background-color: #fefbd8;
+  }
 }
 h1 {
   color: black;
