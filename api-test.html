@@ -12,7 +12,8 @@
   
             $.ajax(settings).done(function (response) {
             console.log(response);
-            var content = response.wind.speed;
+
+            var content = response.site;
             $("#windSpeed").append(content);
            });
         </script>
