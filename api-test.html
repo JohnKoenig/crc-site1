@@ -14,7 +14,7 @@
                 success: function(data){
                     console.log("Success", data);
                     $('#visitcount').html(data)
-                    myVisits.text = "something";
+                    myVisits.text = data;
                     console.log(myVisits.text);
                 },
                 error: function(data){
@@ -27,5 +27,6 @@
     <body>
         <label id="visitcount"></label>
         <hr>
+        <div id=myVisits.text></div>
     </body>
 </html>
