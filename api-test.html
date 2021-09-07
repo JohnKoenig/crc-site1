@@ -14,6 +14,7 @@
                 url: "https://34vp8z8p64.execute-api.us-east-2.amazonaws.com/default/johnkoenig_ninja_counter",
                 success: function(data){
                     console.log("Success", data);
+                    $('#visitcount').html(data["body"])
                 },
                 error: function(data){
                     console.log("Error", data);
@@ -24,6 +25,6 @@
 
     <body>
         <div id="api"></div>
-
+        <label id="visitcount"></label>
     </body>
 </html>
