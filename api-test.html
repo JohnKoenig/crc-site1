@@ -14,11 +14,11 @@
                 success: function(data){
                     console.log("Success", data);
                     $('#visitcount').html(data)
-                    myVisits.text = data;
-                    console.log(myVisits.text);
+                    const myJSON = JSON.stringify(data);
                 },
                 error: function(data){
                     console.log("Error", data);
+                    
                 }
             });
         })
@@ -27,6 +27,6 @@
     <body>
         <label id="visitcount"></label>
         <hr>
-        <div id=myVisits.text></div>
+        <div id=myJSON></div>
     </body>
 </html>
