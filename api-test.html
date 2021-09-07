@@ -4,9 +4,12 @@
         <title>Sample Page</title>
         <script>
             fetch('https://34vp8z8p64.execute-api.us-east-2.amazonaws.com/default/johnkoenig_ninja_counter')
-            .then(response => response.json())  // convert to json
-            .then(json => console.log(json))    //print data to console
-            .catch(err => console.log('Request Failed', err)); // Catch errors
+            .then((response) => {
+            return response.json();
+            })
+            .then((myJson) => {
+            console.log(myJson);
+            });
         </script>
     </head>
     <iframe src="https://34vp8z8p64.execute-api.us-east-2.amazonaws.com/default/johnkoenig_ninja_counter"></iframe>
