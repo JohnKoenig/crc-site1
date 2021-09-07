@@ -5,25 +5,25 @@
     </head>
     <iframe src="https://34vp8z8p64.execute-api.us-east-2.amazonaws.com/default/johnkoenig_ninja_counter"></iframe>
     <hr>
-    
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $.ajax({
+                type: "Get",
+                dataType: "json",
+                url: "https://34vp8z8p64.execute-api.us-east-2.amazonaws.com/default/johnkoenig_ninja_counter",
+                success: function(data){
+                    console.log("Success", data);
+                },
+                error: function(data){
+                    console.log("Error", data);
+                }
+            });
+        })
+    </script>
+
     <body>
         <div id="api"></div>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $.ajax({
-                    type: "Get",
-                    dataType: "json",
-                    url: "https://34vp8z8p64.execute-api.us-east-2.amazonaws.com/default/johnkoenig_ninja_counter",
-                    success: function(data){
-                        console.log("Success", data);
-                    },
-                    error: function(data){
-                        console.log("Error", data);
-                    }
-                });
-            })
-            
-            
-        </script>
+
     </body>
 </html>
