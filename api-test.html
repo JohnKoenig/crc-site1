@@ -6,6 +6,17 @@
     <hr>
     
     <body>
-        <div id="siteCount"></div>
+        <div id="api"></div>
+        <script>
+            function loadAPI() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("GET", "https://34vp8z8p64.execute-api.us-east-2.amazonaws.com/default/johnkoenig_ninja_counter", false);
+                xhttp.addEventListener("load", loadData);
+                xhttp.send();
+            }
+            function loadData() {
+                document.getElementById('api').innerText = apiResponse;
+            }
+        </script>
     </body>
 </html>
