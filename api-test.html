@@ -6,25 +6,6 @@
     <hr>
     
     <body>
-        <div id="myData"></div>
-        <script>
-            fetch('https://34vp8z8p64.execute-api.us-east-2.amazonaws.com/default/johnkoenig_ninja_counter')
-                .then(function (response) {
-                    return response.json();
-                })
-                .then(function (data) {
-                    appendData(data);
-                })
-                .catch(function (err) {
-                    console.log('error: ' + err);
-                });
-            function appendData(data) {
-                var mainContainer = document.getElementById("myData");
-                var div = document.createElement("div");
-                div.innerHTML = 'site: ' + data[i].site + ' ' + data[i].hit_counter;
-                mainContainer.appendChild(div);
-                }
-            }
-        </script>
+        <div id="siteCount"></div>
     </body>
 </html>
