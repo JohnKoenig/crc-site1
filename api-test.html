@@ -1,21 +1,12 @@
 <html>
     <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <title>Sample Page</title>
-        <script>
-            fetch('https://34vp8z8p64.execute-api.us-east-2.amazonaws.com/default/johnkoenig_ninja_counter')
-            .then((response) => {
-            return response.json();
-            })
-            .then((myJson) => {
-            console.log(myJson);
-            });
-        </script>
+        <script src='index.js' defer></script>
     </head>
     <iframe src="https://34vp8z8p64.execute-api.us-east-2.amazonaws.com/default/johnkoenig_ninja_counter"></iframe>
     <hr>
     
     <body>
-        inspect(console)
+        <div id='rick-and-morty-characters'></div>
     </body>
 </html>
