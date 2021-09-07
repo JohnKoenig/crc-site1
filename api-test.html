@@ -10,17 +10,17 @@
              "method": "GET"
            }
   
-           $.ajax(settings).done(function (response) {
-             console.log(response);
+            $.ajax(settings).done(function (response) {
+            console.log(response);
+            var content = response.wind.speed;
+            $("#windSpeed").append(content);
            });
         </script>
     </head>
     <iframe src="https://34vp8z8p64.execute-api.us-east-2.amazonaws.com/default/johnkoenig_ninja_counter"></iframe>
     <hr>
     
-    <body onload="myFunction()">
+    <body>
+        <div id="windSpeed">Wind speed: </div>
     </body>
-    <script type="text/javascript">
-        
-    </script>
 </html>
