@@ -7,6 +7,26 @@
     <hr>
     
     <body>
-        <div id='rick-and-morty-characters'></div>
+        <div id="myData"></div>
+        <script>
+            fetch('https://34vp8z8p64.execute-api.us-east-2.amazonaws.com/default/johnkoenig_ninja_counter')
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (data) {
+                    appendData(data);
+                })
+                .catch(function (err) {
+                    console.log('error: ' + err);
+                });
+            function appendData(data) {
+                var mainContainer = document.getElementById("myData");
+                for (var i = 0; i < data.length; i++) {
+                    var div = document.createElement("div");
+                    div.innerHTML = 'Name: ' + data[i].firstName + ' ' + data[i].lastName;
+                    mainContainer.appendChild(div);
+                }
+            }
+        </script>
     </body>
 </html>
