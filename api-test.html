@@ -1,22 +1,29 @@
 <html>
     <head>
         <title>API Test Page</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <iframe src="https://34vp8z8p64.execute-api.us-east-2.amazonaws.com/default/johnkoenig_ninja_counter"></iframe>
     <hr>
     
     <body>
         <div id="api"></div>
-        <script>
-            function loadAPI() {
-                var xhttp = new XMLHttpRequest();
-                xhttp.open("GET", "https://34vp8z8p64.execute-api.us-east-2.amazonaws.com/default/johnkoenig_ninja_counter", false);
-                xhttp.addEventListener("load", loadData);
-                xhttp.send();
-            }
-            function loadData() {
-                document.getElementById('api').innerText = apiResponse;
-            }
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $.ajax({
+                    type: "Get",
+                    dataType: "json",
+                    url: "https://34vp8z8p64.execute-api.us-east-2.amazonaws.com/default/johnkoenig_ninja_counter",
+                    success: function(data){
+                        console.log("Success", data);
+                    },
+                    error: function(data){
+                        console.log("Error", data);
+                    }
+                });
+            })
+            
+            
         </script>
     </body>
 </html>
