@@ -1,11 +1,18 @@
 <html>
     <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <title>Sample Page</title>
         <script>
-            function myFunction() {
-                fetch('https://34vp8z8p64.execute-api.us-east-2.amazonaws.com/default/johnkoenig_ninja_counter')
-                .then(res => res.json())
-                .then(data => console.log(data));
-            }
+           var settings = {
+             "async": true,
+             "crossDomain": true,
+             "url": "https://34vp8z8p64.execute-api.us-east-2.amazonaws.com/default/johnkoenig_ninja_counter",
+             "method": "GET"
+           }
+  
+           $.ajax(settings).done(function (response) {
+             console.log(response);
+           });
         </script>
     </head>
     <iframe src="https://34vp8z8p64.execute-api.us-east-2.amazonaws.com/default/johnkoenig_ninja_counter"></iframe>
@@ -14,6 +21,6 @@
     <body onload="myFunction()">
     </body>
     <script type="text/javascript">
-        echo 'john';
+        
     </script>
 </html>
