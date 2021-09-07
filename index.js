@@ -11,12 +11,3 @@ fetch("https://34vp8z8p64.execute-api.us-east-2.amazonaws.com/default/johnkoenig
     displayCocktail(data)
   })
   .catch((error) => console.error("FETCH ERROR:", error));
-
-  function displayCocktail(data) {
-    const cocktail = data.drinks[0];
-    const cocktailDiv = document.getElementById("siteCount");
-    const cocktailName = cocktail.strDrink;
-    const heading = document.createElement("h1");
-    heading.innerHTML = cocktailName;
-    cocktailDiv.appendChild(heading);
-  }   
