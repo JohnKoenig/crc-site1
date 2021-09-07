@@ -1,4 +1,4 @@
-fetch("https://34vp8z8p64.execute-api.us-east-2.amazonaws.com/default/johnkoenig_ninja_counter")
+fetch("https://www.thecocktaildb.com/api/json/v1/1/random.php")
   .then((response) => {
     if (response.ok) {
       return response.json();
