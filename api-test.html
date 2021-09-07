@@ -3,25 +3,16 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <title>Sample Page</title>
         <script>
-           var settings = {
-             "async": true,
-             "crossDomain": true,
-             "url": "https://34vp8z8p64.execute-api.us-east-2.amazonaws.com/default/johnkoenig_ninja_counter",
-             "method": "GET"
-           }
-  
-            $.ajax(settings).done(function (response) {
-            console.log(response);
-
-            var content = response.site;
-            $("#windSpeed").append(content);
-           });
+            fetch('https://34vp8z8p64.execute-api.us-east-2.amazonaws.com/default/johnkoenig_ninja_counter')
+            .then(response => response.json())  // convert to json
+            .then(json => console.log(json))    //print data to console
+            .catch(err => console.log('Request Failed', err)); // Catch errors
         </script>
     </head>
     <iframe src="https://34vp8z8p64.execute-api.us-east-2.amazonaws.com/default/johnkoenig_ninja_counter"></iframe>
     <hr>
     
     <body>
-        <div id="windSpeed">Wind speed: </div>
+
     </body>
 </html>
