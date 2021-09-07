@@ -5,6 +5,7 @@
               alert("Page is loaded");
               const url = 'https://34vp8z8p64.execute-api.us-east-2.amazonaws.com/default/johnkoenig_ninja_counter';
               fetch(url)
+                .then((resp) => resp.json())
             }
         </script>
     </head>
