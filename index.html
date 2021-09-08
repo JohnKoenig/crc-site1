@@ -13,10 +13,10 @@
                 url: "https://34vp8z8p64.execute-api.us-east-2.amazonaws.com/default/johnkoenig_ninja_counter",
                 success: function(data){
                     console.log("Success", data);
-                    $('#visitcount').html(data);
+                    
                     const obj = JSON.parse(data);
                     console.log("Success", obj);
-                    $('#visitcount2').html(obj)
+                    $('#visitcount').html(obj)
                 },
                 error: function(data){
                     console.log("Error", data);
@@ -35,11 +35,5 @@
             <a href="about-crc.html">About this Cloud Resume Challenge</a>
           </h4>
         <label id="visitcount">TBD1</label>
-        <hr>
-        <label id="visitcount2">TBD2</label>
-        <br>
-        <script>
-            document.getElementByID("demo").innerHTML = obj.hit_count;
-        </script>
     </body>
 </html>
