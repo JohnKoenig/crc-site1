@@ -16,6 +16,7 @@
                     $('#visitcount').html(data);
                     const obj = JSON.parse(data);
                     console.log("Success", obj);
+                    obj.hit_count = new String(obj.hit_count);
                     $('#visitcount2').html(obj)
                 },
                 error: function(data){
