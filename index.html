@@ -14,6 +14,7 @@
                 success: function(data){
                     console.log("Success", data);
                     $('#visitcount').html(data)
+                    const obj = JSON.parse(data);
                 },
                 error: function(data){
                     console.log("Error", data);
@@ -32,5 +33,9 @@
             <a href="about-crc.html">About this Cloud Resume Challenge</a>
           </h4>
         <label id="visitcount"></label>
+        <br>
+        <script>
+            document.getElementByID("demo").innerHTML = obj.hit_count;
+        </script>
     </body>
 </html>
