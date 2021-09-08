@@ -16,8 +16,8 @@
                     $('#visitcount').html(data);
                     const obj = JSON.parse(data);
                     console.log("Success", obj);
-                    obj.hit_count = new String(obj.hit_count);
-                    $('#visitcount2').html(obj)
+                    sCount = new String(obj.hit_count);
+                    $('#visitcount2').html(sCount)
                 },
                 error: function(data){
                     console.log("Error", data);
@@ -42,7 +42,7 @@
         <p id="demo"></p>
         <br>
         <script>
-            document.getElementByID("demo").innerHTML = obj.hit_count;
+            document.getElementByID("demo").innerHTML = sCount;
         </script>
     </body>
 </html>
