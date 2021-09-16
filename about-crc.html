@@ -2,7 +2,30 @@
 <html>
 <head>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $.ajax({
+            type: "Get",
+            dataType: "json",
+            url: "https://krduvx6bib.execute-api.us-east-2.amazonaws.com/Prod/johnkoenig_ninja_sitecounter",
+            success: function(data){
+                console.log("Success", data);
+                const obj = JSON.parse(data);
+                console.log("Success", obj);
+                sCount = new String(obj.hit_count);
+                $('#visitcount2').html(sCount)
+            },
+            error: function(data){
+                console.log("Error", data);
+                
+            }
+        });
+    })
+</script>
+
 <body>
   <button onclick="goBack()">Go Back</button>
   <script>
@@ -48,5 +71,6 @@
     <li><a href="https://www5.lunapic.com/editor/">lunapic</a></li>
   </ul>
   <iframe>https://krduvx6bib.execute-api.us-east-2.amazonaws.com/Prod/johnkoenig_ninja_sitecounter/</iframe>
+  <h4>Visitor Count: <label id="visitcount2"></label></h4>
 </body>
 </html>
