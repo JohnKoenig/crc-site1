@@ -12,8 +12,11 @@
             dataType: "json",
             url: "https://8ocu01tsn1.execute-api.us-east-2.amazonaws.com/Prod/johnkoenig_ninja_sitecounter/",
             success: function(data){
-                console.log("Success", data);
-                $('#visitcount2').html(data)
+              console.log("Success", data);
+                    const obj = JSON.parse(data);
+                    console.log("Success", obj);
+                    sCount = new String(obj.hit_count);
+                    $('#visitcount').html(sCount)
             },
             error: function(data){
                 console.log("Error", data);
