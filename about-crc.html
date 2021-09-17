@@ -13,8 +13,6 @@
             url: "https://859njf4tz4.execute-api.us-east-2.amazonaws.com/Prod/hello/",
             success: function(data){
                 console.log("Success", data);
-                const obj = JSON.parse(data);
-                console.log("Success", obj);
                 $('#visitcount2').html(data)
             },
             error: function(data){
