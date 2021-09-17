@@ -10,7 +10,7 @@
         $.ajax({
             type: "Get",
             dataType: "json",
-            url: "https://34vp8z8p64.execute-api.us-east-2.amazonaws.com/default/johnkoenig_ninja_counter",
+            url: "https://8ocu01tsn1.execute-api.us-east-2.amazonaws.com/Prod/johnkoenig_ninja_sitecounter/",
             success: function(data){
               console.log("Success", data);
                     const obj = JSON.parse(data);
@@ -70,7 +70,6 @@
     <li><a href="https://www5.lunapic.com/editor/">lunapic</a></li>
   </ul>
   <h4>Test API Return: <label id="visitcount2">Nothing</label></h4>
-  <iframe src="https://859njf4tz4.execute-api.us-east-2.amazonaws.com/Prod/hello/"></iframe>
   <iframe src="https://8ocu01tsn1.execute-api.us-east-2.amazonaws.com/Prod/johnkoenig_ninja_sitecounter/"></iframe>
   <iframe src="https://34vp8z8p64.execute-api.us-east-2.amazonaws.com/default/johnkoenig_ninja_counter"></iframe>
 </body>
