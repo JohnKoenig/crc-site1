@@ -13,7 +13,9 @@
             url: "https://859njf4tz4.execute-api.us-east-2.amazonaws.com/Prod/hello/",
             success: function(data){
                 console.log("Success", data);
-                $('#visitcount2').html(data)
+                const obj = JSON.parse(data);
+                console.log("Success", obj);
+                $('#visitcount2').html(obj)
             },
             error: function(data){
                 console.log("Error", data);
