@@ -2,7 +2,28 @@
 <html>
 <head>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $.ajax({
+            type: "Get",
+            dataType: "json",
+            url: "https://859njf4tz4.execute-api.us-east-2.amazonaws.com/Prod/hello/",
+            success: function(data){
+                console.log("Success", data);
+                const obj = JSON.parse(data);
+                console.log("Success", obj);
+                $('#visitcount2').html(data)
+            },
+            error: function(data){
+                console.log("Error", data);
+                
+            }
+        });
+    })
+</script>
 
 <body>
   <button onclick="goBack()">Go Back</button>
@@ -48,6 +69,7 @@
     <li><a href="https://wordpress.com/">wordpress.com</a></li>
     <li><a href="https://www5.lunapic.com/editor/">lunapic</a></li>
   </ul>
+  <h4>Visitor Count: <label id="visitcount2"></label></h4>
   <iframe>https://859njf4tz4.execute-api.us-east-2.amazonaws.com/Prod/hello/</iframe>
 </body>
 </html>
