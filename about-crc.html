@@ -18,8 +18,8 @@
     <li><a href="http://johnkoenig.ninja.s3-website.us-east-2.amazonaws.com/img/AWSCertifiedCloudPractitionerCertificate.pdf" target="_blank">Certification</a></li>
     <li>HTML (Stored in AWS S3) - Used mostly basic list item tags.</li>
     <li>CSS (Stored in AWS S3) - Used a simple CSS I found online and customized it with colors and fonts that I like.</li>
-    <li>Static S3 Website - HTML files and images are stored in an AWS S3 bucket configured to host a static website. Additionally, I used AWS Pipeline to monitor a <a href="https://github.com/JohnKoenig" target="_blank">GitHub repository</a> for changes. As soon as I push an update to my GitHub repository, AWS Pipeline copies the changes to the AWS S3 bucket.</li>
-    <li>HTTPS - Used Amazon CloudFront and AWS Certificate Manager to create an issue a certificate</li>
+    <li>Static S3 Website - HTML files and images are stored in an AWS S3 bucket configured to host a static website. Additionally, I used AWS Pipeline to monitor a <a href="https://github.com/JohnKoenig" target="_blank">GitHub repository</a> for changes. As soon as I push an update to my GitHub repository, AWS Pipeline copies the changes to the AWS S3 bucket. Here is the direct URL for the site: <a href="http://johnkoenig.ninja.s3-website.us-east-2.amazonaws.com/" target="_blank"></a>http://johnkoenig.ninja.s3-website.us-east-2.amazonaws.com/</a></li>
+    <li>HTTPS - Used Amazon CloudFront and AWS Certificate Manager to create an issue a certificate. Here is the URL for the CloudFront site using the registered DNS name: <a href="http://johnkoenig.ninja" target="_blank"></a>http://johnkoenig.ninja</a></li>
     <li>DNS (Route 53) - Registered the domain johnkoenig.ninja using AWS Route 53. Then I created a Route 53 hosted zone to maintain records for my new domain and to direct traffic to my static website hosted in AWS S3.</li>
     <li>Javascript - Used JavaScript to get a visitor counter for the main page. The JavaScript calls an API and receives a JSON response. It then formates the response to only pass the numeric count back to the website.</li>
     <li>Database - Create a DynamoDB table with one record to maintain the visitor count for my website.</li>
@@ -47,10 +47,6 @@
     <li><a href="https://wordpress.com/">wordpress.com</a></li>
     <li><a href="https://www5.lunapic.com/editor/">lunapic</a></li>
     <li><a href="https://discord.com/channels/724729404214739037/875739661304217630">Cloud Resume Challenge Discord</a></li>
-  </ul>
-  <p>My Site without CloudFront</p>
-  <ul>
-    <li><a href="http://johnkoenig.ninja.s3-website.us-east-2.amazonaws.com/">http://johnkoenig.ninja.s3-website.us-east-2.amazonaws.com/</a></li>
   </ul>
 </body>
 </html>
