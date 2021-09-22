@@ -13,23 +13,19 @@
   </script>
   <p class="head">Cloud Resume Challenge Journey</p>
   <img src="https://lucid.app/publicSegments/view/9c6c0212-62b8-4110-a162-63c85ef0b5a1/image.png" alt="My CRC AWS Framework">
-  <p class="head">Cloud Resume Challenge Source</p>
-  <ul>
-    <li><a href="https://cloudresumechallenge.dev">https://cloudresumechallenge.dev</a></li>
-  </ul>
-  <p class="head">Deployment Details</p>
+  <p class="head"><a href="https://cloudresumechallenge.dev">Cloud Resume Challenge</a> Deployment Details</p>
   <ol>
     <li><a href="http://johnkoenig.ninja.s3-website.us-east-2.amazonaws.com/img/AWSCertifiedCloudPractitionerCertificate.pdf">Certification</a></li>
     <li>HTML (Stored in AWS S3) - Used mostly basic list item tags.</li>
     <li>CSS (Stored in AWS S3) - Used a simple CSS I found online and customized it with colors and fonts that I like.</li>
-    <li>Static S3 Website - HTML files and images are stored in an AWS S3 bucket configured to host a static website. Additionally, I used AWS Pipeline to monitor a <a href="https://github.com/JohnKoenig">GitHub repository</a> for changes. As soon as I push an update to my GitHub repo, AWS Pipeline copies the changes to the AWS S3 bucket.</li>
+    <li>Static S3 Website - HTML files and images are stored in an AWS S3 bucket configured to host a static website. Additionally, I used AWS Pipeline to monitor a <a href="https://github.com/JohnKoenig">GitHub repository</a> for changes. As soon as I push an update to my GitHub repository, AWS Pipeline copies the changes to the AWS S3 bucket.</li>
     <li>HTTPS - Used Amazon CloudFront and AWS Certificate Manager to create an issue a certificate</li>
     <li>DNS (Route 53) - Registered the domain johnkoenig.ninja using AWS Route 53. Then I created a Route 53 hosted zone to maintain records for my new domain and to direct traffic to my static website hosted in AWS S3.</li>
     <li>Javascript - Used JavaScript to get a visitor counter for the main page. The JavaScript calls an API and receives a JSON response. It then formates the response to only pass the numeric count back to the website.</li>
     <li>Database - Create a DynamoDB table with one record to maintain the visitor count for my website.</li>
-    <li>API - Created an API using AWS’s API Gateway and Lambda functions. The Lambda function is written in Python</li>
+    <li>API - Created an API using AWS's API Gateway and Lambda functions. The Lambda function is written in Python</li>
     <li>Python - Use Python for the Lambda function to increment the count value in the DynamoDB table and then return the updated count.</li>
-    <li>Tests - I included basic tests that are executed in the <a href="https://github.com/JohnKoenig">GitHub</a> repository on push events.</li>
+    <li>Tests - I included basic tests that are executed in the <a href="https://github.com/JohnKoenig">GitHub repository</a> on push events.</li>
     <li>Infrastructure as Code - Used the AWS Serverless Application Model (SAM) to deploy the API Gateway, Lambda Function, and DynamoDB table using the AWS SAM CLI.</li>
     <li>Source Control - I created four GitHub repositories for my code (Frontend/HTML, API Gateway, Lambda, DynamoDB). At first, I tried to consolidate all backend repositories, but then I remembered the benefits of loosely coupled applications. In my specific implementation, separating each component helped me to think about simple tests for each component.</li>
     <li>CI/CD (Back end) - Set up a <a href="https://github.com/JohnKoenig">GitHub Action</a> to perform basic tests for my backend repositories, then deploy the code via SAM.</li>
