@@ -13,33 +13,35 @@
   </script>
   <p class="head">Cloud Resume Challenge Journey</p>
   <img src="https://lucid.app/publicSegments/view/9c6c0212-62b8-4110-a162-63c85ef0b5a1/image.png" alt="My CRC AWS Framework">
+  <p class="head">Cloud Resume Challenge Source</p>
   <ul>
-    <li>AWS S3</li>
-      <ul>
-        <li>HTML and CSS file storage</li>
-        <li>Delivering Static Website</li>
-      </ul>
-    <li>Route 53</li>
-     <ul>
-       <li>Domain Registrar (johnkoenig.ninja)</li>
-       <li>DNS Zone Management (johnkoenig.ninja)</li>
-     </ul>
-     <li>AWS Certificate Manager (SSL for johnkoenig.ninja)</li>
-     <li>CloudFront (Redirect HTTP to HTTPS for johnkoenig.ninja)</li>
-     <li>Lambda with Python</li>
-     <li>API Gateway</li>
-     <li>JavaScript to call the API Gateway, update the value, retreive the value, and reformat the data for HTML.</li>
+    <li><a href="https://cloudresumechallenge.dev">https://cloudresumechallenge.dev</a></li>
+  </ul>
+  <p class="head">Deployment Details</p>
+  <ul>
+    <li>1. <a href="http://johnkoenig.ninja.s3-website.us-east-2.amazonaws.com/img/AWSCertifiedCloudPractitionerCertificate.pdf">Certification</a></li>
+    <li>2. HTML (Stored in AWS S3) - Used mostly basic list item tags.</li>
+    <li>3. CSS (Stored in AWS S3) - Used a simple CSS I found online and customized it with colors and fonts that I like.</li>
+    <li>4. Static S3 Website - HTML files and images are stored in an AWS S3 bucket configured to host a static website. Additionally, I used AWS Pipeline to monitor a <a href="https://github.com/JohnKoenig">GitHub repository</a> for changes. As soon as I push an update to my GitHub repo, AWS Pipeline copies the changes to the AWS S3 bucket.</li>
+    <li>5. HTTPS - Used Amazon CloudFront and AWS Certificate Manager to create an issue a certificate</li>
+    <li>6. DNS (Route 53) - Registered the domain johnkoenig.ninja using AWS Route 53. Then I created a Route 53 hosted zone to maintain records for my new domain and to direct traffic to my static website hosted in AWS S3.</li>
+    <li>7. Javascript - Used JavaScript to get a visitor counter for the main page. The JavaScript calls an API and receives a JSON response. It then formates the response to only pass the numeric count back to the website.</li>>
+    <li>8. Database - Create a DynamoDB table with one record to maintain the visitor count for my website.</li>
+    <li>9. API - Created an API using AWS’s API Gateway and Lambda functions. The Lambda function is written in Python</li>
+    <li>10. Python - Use Python for the Lambda function to increment the count value in the DynamoDB table and then return the updated count.</li>
+    <li>11. Tests - I included basic tests that are executed in the <a href="https://github.com/JohnKoenig">GitHub</a> repository on push events.</li>
+    <li>12. Infrastructure as Code - Used the AWS Serverless Application Model (SAM) to deploy the API Gateway, Lambda Function, and DynamoDB table using the AWS SAM CLI.</li>
+    <li>13. Source Control - I created four GitHub repositories for my code (Frontend/HTML, API Gateway, Lambda, DynamoDB). At first, I tried to consolidate all backend repositories, but then I remembered the benefits of loosely coupled applications. In my specific implementation, separating each component helped me to think about simple tests for each component.</li>
+    <li>14. CI/CD (Back end) - Set up a <a href="https://github.com/JohnKoenig">GitHub Action</a> to perform basic tests for my backend repositories, then deploy the code via SAM.</li>
+    <li>15. CI/CD (Front end) - To leverage another AWS feature, I configured frontend changes to be deployed from <a href="https://github.com/JohnKoenig/johnkoenig.ninja">GitHub</a> via AWS Pipeline.</li>
+    <li>16. <a href="https://johnscloudresumechallengeexperience.wordpress.com/" target="_blank">Blog post</a></li>
   </ul>
   <p class="head">Other AWS Services Used</p>
   <ul>
     <li>Budgets (For monitoring AWS expense)</li>
     <li>Simple Notification Service (For AWS spending alerts)</li>
     <li>CodePipeline (Pipeline from GitHub to AWS S3)</li>
-    <li><a href="https://github.com/JohnKoenig">GitHub</a></li>
-  </ul>
-  <p class="head">Cloud Resume Challenge Source</p>
-  <ul>
-    <li><a href="https://cloudresumechallenge.dev">https://cloudresumechallenge.dev</a></li>
+    <li>GitHub</a></li>
   </ul>
   <p>Other Sites Used</p>
   <ul>
