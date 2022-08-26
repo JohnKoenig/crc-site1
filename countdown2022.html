@@ -24,7 +24,9 @@
 
 <hr>
 
-<p>Carnegie Hall: Complete</p>
+<p>Carnegie Hall:</p>
+
+<iframe src="https://free.timeanddate.com/countdown/i8h59uvj/n848/cf111/cm0/cu1/ct0/cs1/ca0/co0/cr0/ss0/cac000/cpc000/pc000/tcccc/fn2/fs100/szw256/szh108/iso2022-06-18T00:00:00" allowtransparency="true" frameborder="0" width="256" height="108"></iframe>
 
 <hr>
 
@@ -106,73 +108,15 @@
 
 <hr>
 
-<p>Christmas: <label id="christmas"></label></p>
+<p>Christmas:</p>
 
-<script>
-// Set the date we're counting down to
-var countDownDate25 = new Date("Dec 25, 2022 00:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate25 - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="christmas"
-  document.getElementById("christmas").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("christmas").innerHTML = "Finished!";
-  }
-}, 1000);
-</script>
+<iframe src="https://free.timeanddate.com/countdown/i8h59uvj/n848/cf111/cm0/cu1/ct0/cs1/ca0/co0/cr0/ss0/cacfff/cpcfff/pcf00/tc090/fn2/fs100/szw256/szh108/iso2022-12-25T00:00:00" allowtransparency="true" frameborder="0" width="256" height="108"></iframe>
 
 <hr>
 
-<p>Happy New Year! <label id="newyear"></label></p>
+<p>Happy New Year!</p>
 
-<script>
-// Set the date we're counting down to
-var countDownDate25 = new Date("Dec 31, 2022 00:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate25 - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="newyear"
-  document.getElementById("newyear").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("newyear").innerHTML = "Finished!";
-  }
-}, 1000);
-</script>
+<iframe src="https://free.timeanddate.com/countdown/i8h59uvj/n848/cf111/cm0/cu1/ct0/cs1/ca0/co0/cr0/ss0/cacfff/cpcfff/pc000/tc666/fn2/fs100/szw256/szh108/iso2023-01-01T00:00:00" allowtransparency="true" frameborder="0" width="256" height="108"></iframe>
 
 </body>
 </html>
