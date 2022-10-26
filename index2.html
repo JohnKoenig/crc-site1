@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JohnKoenig.ninja Launch Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>JohnKoenig.ninja Launch Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+  <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+    .w3-bar-block .w3-bar-item {padding:20px}
+  </style>
 
+  <script type="text/javascript">
+      $(document).ready(function() {
+          $.ajax({
+              type: "Get",
+              dataType: "json",
+              url: "https://40vk7pg898.execute-api.us-east-2.amazonaws.com/Prod/johnkoenigninjasitecounter",
+              success: function(data) {
+                  console.log("Success", data);
+                  const obj = JSON.parse(data);
+                  console.log("Success", obj);
+                  sCount = new String(obj.hit_count);
+                  $('#visitcount').html(sCount)
+              },
+              error: function(data) {
+                  console.log("Error", data);
 
-<script type="text/javascript">
-    $(document).ready(function() {
-        $.ajax({
-            type: "Get",
-            dataType: "json",
-            url: "https://40vk7pg898.execute-api.us-east-2.amazonaws.com/Prod/johnkoenigninjasitecounter",
-            success: function(data) {
-                console.log("Success", data);
-                const obj = JSON.parse(data);
-                console.log("Success", obj);
-                sCount = new String(obj.hit_count);
-                $('#visitcount').html(sCount)
-            },
-            error: function(data) {
-                console.log("Error", data);
-
-            }
-        });
-    })
-</script>
+              }
+          });
+      })
+  </script>
 
 </head>
 
