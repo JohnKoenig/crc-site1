@@ -1,51 +1,117 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-    <title>JohnKoenig.ninja Launch Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>JohnKoenig.ninja Launch Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+  <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+    .w3-bar-block .w3-bar-item {padding:20px}
+  </style>
+
+  <script type="text/javascript">
+      $(document).ready(function() {
+          $.ajax({
+              type: "Get",
+              dataType: "json",
+              url: "https://40vk7pg898.execute-api.us-east-2.amazonaws.com/Prod/johnkoenigninjasitecounter",
+              success: function(data) {
+                  console.log("Success", data);
+                  const obj = JSON.parse(data);
+                  console.log("Success", obj);
+                  sCount = new String(obj.hit_count);
+                  $('#visitcount').html(sCount)
+              },
+              error: function(data) {
+                  console.log("Error", data);
+
+              }
+          });
+      })
+  </script>
+
 </head>
 
-<script type="text/javascript">
-    $(document).ready(function() {
-        $.ajax({
-            type: "Get",
-            dataType: "json",
-            url: "https://40vk7pg898.execute-api.us-east-2.amazonaws.com/Prod/johnkoenigninjasitecounter",
-            success: function(data) {
-                console.log("Success", data);
-                const obj = JSON.parse(data);
-                console.log("Success", obj);
-                sCount = new String(obj.hit_count);
-                $('#visitcount').html(sCount)
-            },
-            error: function(data) {
-                console.log("Error", data);
+<body>
 
-            }
-        });
-    })
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="resume.html" onclick="w3_close()" class="w3-bar-item w3-button">Resume</a>
+  <a href="https://www.linkedin.com/in/john-koenig-iii" class="w3-bar-item w3-button" target="_blank">LinkedIn</a>
+  <a href="countdown2022.html" onclick="w3_close()" class="w3-bar-item w3-button">2022 Calendar</a>
+  <a href="countdown2023.html" onclick="w3_close()" class="w3-bar-item w3-button">2023 Calendar</a>
+  <a href="about-crc.html" onclick="w3_close()" class="w3-bar-item w3-button">About the Cloud Resume Challenge</a>
+  <a href="https://johnscloudresumechallengeexperience.wordpress.com/" class="w3-bar-item w3-button" target="_blank">WordPress Blog supporting the Cloud Resume Challenge</a>
+  <a href="lab.html" onclick="w3_close()" class="w3-bar-item w3-button">R&D</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-black w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="content">
+    <div class="w3-quarter">
+      <a href="resume.html"><img title="Resume" src="img/resume.png" alt="resume" style="width:100%">
+      <h3>Resume</h3></a>
+    </div>
+    <div class="w3-quarter">
+      <a href="https://www.linkedin.com/in/john-koenig-iii" target="_blank"><img title="LinkedIn" src="img/linkedin.png" alt="LinkedIn" style="width:100%">
+      <h3>LinkedIn</h3></a>
+    </div>
+    <div class="w3-quarter">
+      <a href="countdown2022.html"><img title="2022" src="/img/countdown2022.png" alt="countdown2022" style="width:100%">
+      <h3>2022 Calendar</h3></a>
+    </div>
+    <div class="w3-quarter">
+      <a href="countdown2023.html"><img title="2023" src="/img/countdown2023.png" alt="countdown2023" style="width:100%">
+      <h3>2023 Calendar</h3></a>
+    </div>
+  </div>
+  
+  <!-- Second Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <a href="about-crc.html"><img title="About the Cloud Resume Challenge" src="img/notes.png" alt="About this Cloud Resume Challenge" style="width:100%">
+      <h3>About this Cloud Resume Challenge</h3></a>
+    </div>
+    <div class="w3-quarter">
+      <a href="https://johnscloudresumechallengeexperience.wordpress.com/" target="_blank"><img title="WordPress Blog supporting the Cloud Resume Challenge" src="img/blog.png" alt="blog" style="width:100%">
+      <h3>WordPress Blog supporting the Cloud Resume Challenge</h3></a>
+    </div>
+    <div class="w3-quarter">
+      <a href="lab.html"><img title="R&D" src="img/lab.png" alt="lab" style="width:100%">
+      <h3>R&D</h3></a>
+    </div>
+  </div>
+  
+  <p>Visitor Count: <label id="visitcount"></label></p>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
 </script>
 
-<body>
-    <center>
-        <a href="resume.html"><img title="Resume" src="img/resume.png" alt="resume"></a>
-        
-        <a href="https://www.linkedin.com/in/john-koenig-iii" target="_blank"><img title="LinkedIn" src="img/linkedin.png" alt="LinkedIn"></a>
-        
-        <a href="countdown2022.html"><img title="2022" src="img/countdown2022.png" alt="countdown2022"></a>
-        
-        <a href="countdown2023.html"><img title="2023" src="img/countdown2023.png" alt="countdown2023"></a>
-        
-        <a href="about-crc.html"><img title="About the Cloud Resume Challenge" src="img/notes.png" alt="About this Cloud Resume Challenge"></a>
-        
-        <a href="https://johnscloudresumechallengeexperience.wordpress.com/" target="_blank"><img title="WordPress Blog supporting the Cloud Resume Challenge" src="img/blog.png" alt="blog"></a>
-        
-        <a href="lab.html"><img title="R&D" src="img/lab.png" alt="lab"></a>
-        <br>
-        <br>
-        <p>Visitor Count: <label id="visitcount"></label></p>
-    </center>
 </body>
-
 </html>
