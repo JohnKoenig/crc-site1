@@ -5,7 +5,8 @@ body {
   margin-right: 50px;
   */
   /*background-image: url("img\CelticSamuraiinkiltwithswords.png");*/
-  background-image: linear-gradient(#b7cdfa,rgb(234, 197, 150));
+  /*background-image: linear-gradient(#b7cdfa,rgb(234, 197, 150));*/
+  background-image: linear-gradient(#b7cdfa,red);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
