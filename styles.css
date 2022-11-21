@@ -4,9 +4,9 @@ body {
   margin-left: 50px;
   margin-right: 50px;
   */
-  /*background-image: url("img\CelticSamuraiinkiltwithswords.png");*/
+  background-image: url("img\Thanksgiving.png");
   /*background-image: linear-gradient(#b7cdfa,rgb(234, 197, 150));*/
-  background-image: linear-gradient(rgb(255, 82, 82),white);
+  /*background-image: linear-gradient(rgb(255, 82, 82),white);*/
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
