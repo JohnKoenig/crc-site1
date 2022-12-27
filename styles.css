@@ -8,8 +8,9 @@ body {
   /*background-image: linear-gradient(rgb(255, 82, 82),white);*/
   /*background-image: url("img/CelticSamuraiinkiltwithswords.png");
   background-repeat: no-repeat;
-  background-attachment: fixed;*/
-  background-image: linear-gradient(#b7cdfa,rgb(234, 205, 168));
+  background-attachment: fixed;
+  background-image: linear-gradient(#b7cdfa,rgb(234, 205, 168)); */
+  background-color: #bb2649;
 }
 h1 {
   color: black;
