@@ -41,7 +41,7 @@ table, th, td {
   vertical-align: top;
   text-align: center;
 }
-.center {
+.row {
   margin: auto;
   padding: 10px;
 }
