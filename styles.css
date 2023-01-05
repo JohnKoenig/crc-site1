@@ -40,15 +40,3 @@ table, th, td {
   vertical-align: top;
   text-align: center;
 }
-.row {
-  margin: auto;
-  padding: 10px;
-}
-.left {
-  float:left;
-  width:100%;
-}
-.right {
-  float:right;
-  width:100%;
-}
