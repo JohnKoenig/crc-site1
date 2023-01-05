@@ -45,3 +45,7 @@ table, th, td {
   margin: auto;
   padding: 10px;
 }
+.item {
+  float:left;
+  width:100%;
+}
