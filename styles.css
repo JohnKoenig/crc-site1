@@ -36,4 +36,5 @@ table, th, td {
   border: 5px outset #87affd;
   background-color: #ceddff;    
   text-align: center;
+  border-radius: 10px;
 }
