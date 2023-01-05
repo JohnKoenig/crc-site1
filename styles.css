@@ -31,9 +31,8 @@ p {
   color: #618685;
   font-family: "Open Sans", Lato, Arial;
 }
-img
-{
-Padding: 10px,10px,10px,10px;
+img {
+  Padding: 10px,10px,10px,10px;
 }
 table, th, td {
   border: 1px solid black;
@@ -45,7 +44,11 @@ table, th, td {
   margin: auto;
   padding: 10px;
 }
-.item {
+.left {
   float:left;
+  width:100%;
+}
+.right {
+  float:right;
   width:100%;
 }
