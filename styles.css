@@ -37,4 +37,5 @@ table, th, td {
   background-color: #ceddff;    
   text-align: center;
   border-radius: 10px;
+  box-shadow: inset 10px;
 }
