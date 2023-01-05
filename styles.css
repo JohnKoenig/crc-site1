@@ -41,7 +41,7 @@ table, th, td {
   text-align: center;
 }
 .landingDiv {
-  border: 5px outset red;
-  background-color: lightblue;    
+  border: 5px outset #87affd;
+  background-color: #e6ebf7;    
   text-align: center;
 }
