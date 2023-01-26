@@ -41,5 +41,6 @@ table, th, td {
 .landingChildDiv {  
   display: inline-block;
   text-align: center;
-  margin-right: 60px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
