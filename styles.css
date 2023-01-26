@@ -38,3 +38,8 @@ table, th, td {
   text-align: center;
   border-radius: 10px;
 }
+.landingChildDiv {  
+  display: inline-block;
+  text-align: center;
+  margin-right: 60px;
+}
