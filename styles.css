@@ -7,21 +7,25 @@ body {
 h1 {
   color: black;
   font-family: 'Inter';
+  font-size: 40vw;
   text-align: center;
 }
 h2 {
   color: #3e5992;
   font-family: 'Inter';
+  font-size: 20vw;
   text-align: center;
 }
 h4 {
   color: #3e5992;
   font-family: 'Inter';
+  font-size: 10vw;
   text-align: center;
 }
 p {
   color: #3e5992;
   font-family: 'Inter';
+  font-size: 2vw;
 }
 img {
   Padding: 10px,10px,10px,10px;
