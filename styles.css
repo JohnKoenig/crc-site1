@@ -7,19 +7,19 @@ body {
 h1 {
   color: black;
   font-family: 'Inter';
-  font-size: 40vw;
+  font-size: 7vw;
   text-align: center;
 }
 h2 {
   color: #3e5992;
   font-family: 'Inter';
-  font-size: 20vw;
+  font-size: 6vw;
   text-align: center;
 }
 h4 {
   color: #3e5992;
   font-family: 'Inter';
-  font-size: 10vw;
+  font-size: 4vw;
   text-align: center;
 }
 p {
