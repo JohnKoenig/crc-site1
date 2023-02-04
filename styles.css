@@ -1,23 +1,27 @@
 body {
-  font-family: "Inter";
+  font-family: 'Inter';
   background-color: #b7cdfa;
   margin-left: 50px;
   margin-right: 50px;
 }
 h1 {
   color: black;
+  font-family: 'Inter';
   text-align: center;
 }
 h2 {
-  color: #558a88;
+  color: #3e5992;
+  font-family: 'Inter';
   text-align: center;
 }
 h4 {
-  color: #618685;
+  color: #3e5992;
+  font-family: 'Inter';
   text-align: center;
 }
 p {
-  color: #618685;
+  color: #3e5992;
+  font-family: 'Inter';
 }
 img {
   Padding: 10px,10px,10px,10px;
