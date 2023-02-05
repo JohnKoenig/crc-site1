@@ -60,6 +60,7 @@ table, th, td {
 }
 .landingChildDiv {  
   display: inline-block;
+  width: 33%;
   text-align: center;
   margin-left: 30px;
   margin-right: 30px;
