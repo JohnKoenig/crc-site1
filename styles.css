@@ -1,8 +1,8 @@
 body {
   font-family: 'Inter';
   background-color: #b7cdfa;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 h1 {
   color: black;
@@ -21,6 +21,12 @@ h4 {
   font-family: 'Inter';
   font-size: 4vw;
   text-align: center;
+}
+.resume {
+  color: #3e5992;
+  font-family: 'Inter';
+  font-size: 4vw;
+  text-align: left;
 }
 p {
   color: #3e5992;
