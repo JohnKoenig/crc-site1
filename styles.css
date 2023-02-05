@@ -16,12 +16,14 @@ h2 {
   font-family: 'Inter';
   font-size: 6vw;
   text-align: center;
+  line-height: .5em;
 }
 h4 {
   color: #3e5992;
   font-family: 'Inter';
   font-size: 4vw;
   text-align: center;
+  line-height: .5em;
 }
 .resume {
   color: #3e5992;
