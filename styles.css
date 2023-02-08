@@ -1,36 +1,50 @@
 body {
-  
+  font-family: 'Inter';
   background-color: #b7cdfa;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 h1 {
   color: black;
-  font-family: "Open Sans", Lato, Arial;
+  font-family: 'Inter';
+  font-size: 6vw;
   text-align: center;
+  line-height: .5em;
 }
 h2 {
-  color: #618685;
-  font-family: "Open Sans", Lato, Arial;
+  color: #3e5992;
+  font-family: 'Inter';
+  font-size: 5vw;
   text-align: center;
+  line-height: .5em;
+}
+h3 {
+  color: #3e5992;
+  font-family: 'Inter';
+  font-size: 5vw;
+  text-align: center;
+  line-height: .2em;
 }
 h4 {
-  color: #618685;
-  font-family: "Open Sans", Lato, Arial;
+  color: #3e5992;
+  font-family: 'Inter';
+  font-size: 4vw;
   text-align: center;
+  line-height: .2em;
+}
+.resume {
+  color: #3e5992;
+  font-family: 'Inter';
+  font-size: 4vw;
+  text-align: left;
 }
 p {
-  color: #618685;
-  font-family: "Open Sans", Lato, Arial;
+  color: #3e5992;
+  font-family: 'Inter';
+  font-size: 2vw;
 }
 img {
   Padding: 10px,10px,10px,10px;
-}
-table, th, td {
-  border: 1px solid black;
-  border-radius: 10px;
-  vertical-align: top;
-  text-align: center;
 }
 .landingDiv {
   border: 5px outset #87affd;
