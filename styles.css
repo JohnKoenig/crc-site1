@@ -9,28 +9,24 @@ h1 {
   font-family: 'Inter';
   font-size: 6vw;
   text-align: center;
-  line-height: .5em;
 }
 h2 {
   color: #3e5992;
   font-family: 'Inter';
   font-size: 5vw;
   text-align: center;
-  line-height: .5em;
 }
 h3 {
   color: #3e5992;
   font-family: 'Inter';
   font-size: 5vw;
   text-align: center;
-  line-height: .2em;
 }
 h4 {
   color: #3e5992;
   font-family: 'Inter';
   font-size: 4vw;
   text-align: center;
-  line-height: .2em;
 }
 .resume {
   color: #3e5992;
