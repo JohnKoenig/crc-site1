@@ -28,6 +28,12 @@ h4 {
   font-size: 3vw;
   text-align: center;
 }
+.resume {
+  color: #3e5992;
+  font-family: 'Inter';
+  font-size: 2vw;
+  text-align: center;
+}
 p {
   color: #3e5992;
   font-family: 'Inter';
@@ -37,7 +43,7 @@ img {
   Padding: 10px,10px,10px,10px;
 }
 .landingDiv {
-  border: 5px outset #87affd;
+  border: 5px outset #97b9fc;
   background-color: #dae4fd;    
   text-align: center;
   border-radius: 10px;
