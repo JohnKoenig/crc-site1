@@ -40,6 +40,12 @@ h4 {
   font-size: 3vw;
   text-align: center;
 }
+.resume-heading {
+  color: #000000;
+  font-family: 'Inter';
+  font-size: 4vw;
+  text-align: center;
+}
 p {
   color: #3e5992;
   font-family: 'Inter';
