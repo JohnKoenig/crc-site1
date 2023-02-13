@@ -1,6 +1,6 @@
 body {
   font-family: 'Inter';
-  background-color: #b7cdfa;
+  /* background-color: #b7cdfa; */
   margin-left: 10vw;
   margin-right: 10vw;
 }
@@ -9,34 +9,30 @@ h1 {
   font-family: 'Inter';
   font-size: 6vw;
   text-align: center;
-  line-height: .5em;
 }
 h2 {
   color: #3e5992;
   font-family: 'Inter';
   font-size: 5vw;
   text-align: center;
-  line-height: .5em;
 }
 h3 {
   color: #3e5992;
   font-family: 'Inter';
-  font-size: 5vw;
+  font-size: 4vw;
   text-align: center;
-  line-height: .2em;
 }
 h4 {
   color: #3e5992;
   font-family: 'Inter';
-  font-size: 4vw;
+  font-size: 3vw;
   text-align: center;
-  line-height: .2em;
 }
 .resume {
-  color: #3e5992;
+  color: #000000;
   font-family: 'Inter';
-  font-size: 4vw;
-  text-align: left;
+  font-size: 3vw;
+  text-align: center;
 }
 p {
   color: #3e5992;
@@ -47,7 +43,7 @@ img {
   Padding: 10px,10px,10px,10px;
 }
 .landingDiv {
-  border: 5px outset #87affd;
+  border: 5px outset #97b9fc;
   background-color: #dae4fd;    
   text-align: center;
   border-radius: 10px;
