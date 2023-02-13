@@ -4,6 +4,12 @@ body {
   margin-left: 10vw;
   margin-right: 10vw;
 }
+@media only screen and (max-width: 600px) {
+  body {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
 h1 {
   color: black;
   font-family: 'Inter';
