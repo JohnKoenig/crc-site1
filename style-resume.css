@@ -1,11 +1,6 @@
 body {
   font-family: 'Inter';
 }
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: #3e5992;
-  }
-}
 .resume-heading {
   color: #000000;
   font-family: 'Inter';
