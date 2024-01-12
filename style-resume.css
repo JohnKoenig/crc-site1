@@ -1,15 +1,21 @@
 body {
   font-family: 'Inter';
 }
-.resume-heading {
+h1 {
   color: #000000;
   font-family: 'Inter';
-  font-size: 4vw;
   text-align: center;
 }
-.resume {
+h3 {
   color: #000000;
   font-family: 'Inter';
-  font-size: 3vw;
+  font-size: 5vmax;
   text-align: center;
+}
+p {
+  color: #000000;
+  font-family: 'Inter';
+  font-size: 2vmax;
+  text-align: center;
+  margin: 1vmax;
 }
